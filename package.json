@@ -1,0 +1,25 @@
+{
+  "name": "linux-system-monitor",
+  "version": "1.0.0",
+  "description": "A CLI tool to monitor Linux system resources in real-time",
+  "main": "monitor.js",
+  "type": "module",
+  "bin": {
+    "sysmon": "./cli/monitor.js"
+  },
+  "scripts": {
+    "start": "node monitor.js"
+  },
+  "author": "Engin Demiray",
+  "license": "MIT",
+  "dependencies": {
+    "asciichart": "^1.5.25",
+    "chalk": "^5.6.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^14.0.1",
+    "express": "^5.1.0",
+    "ora": "^6.3.1",
+    "systeminformation": "^5.27.11",
+    "ws": "^8.18.3"
+  }
+}

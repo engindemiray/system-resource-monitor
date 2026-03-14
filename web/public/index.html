@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>System Resource Monitor Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h1>System Resource Monitor Dashboard</h1>
+
+<div class="charts">
+  <div class="chart-container">
+    <h2>CPU</h2>
+    <canvas id="cpuChart"></canvas>
+  </div>
+  <div class="chart-container">
+    <h2>RAM</h2>
+    <canvas id="ramChart"></canvas>
+  </div>
+  <div class="chart-container">
+    <h2>Disk</h2>
+    <canvas id="diskChart"></canvas>
+  </div>
+  <div class="chart-container">
+    <h2>Network</h2>
+    <canvas id="netChart"></canvas>
+  </div>
+</div>
+
+<h2>Top 5 CPU Consuming Processes</h2>
+<table id="topProcesses">
+  <thead>
+    <tr>
+      <th>PID</th>
+      <th>Name</th>
+      <th>CPU %</th>
+      <th>RAM %</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<footer class="footer">
+  <p>© 2025 System Resource Monitor</p>
+</footer>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
